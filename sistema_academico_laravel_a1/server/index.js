@@ -16,6 +16,7 @@ server.get('/usuarios', function(req, resp){
         db.collection('usuarios').find().toArray(function(err, data){
             if(err) resp.send(err);
             resp.send(data);
+            
         });
     });
 });
